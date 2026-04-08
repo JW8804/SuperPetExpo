@@ -1,0 +1,1 @@
+A website I made from scratch with a combination of HTML & CSS. Demo website to showcase skills and areas of growing expertise. SuperPetExpo is an actual, legitimate website. In no way am I attempting to copy their website for any form of gain. It is merely a project to display my competence. Do take the time visit the actual website at superpetexpo.com
