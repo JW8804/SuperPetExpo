@@ -1,0 +1,401 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css2?family=Limelight&family=Oxygen:wght@300;400;700&family=Quicksand:wght@300..700&display=swap);
+/* =========================
+   RESET / BASE
+========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+/*  border: 1px solid green;*/
+}
+html{
+	scroll-behavior: smooth
+}
+
+body {
+  font-family: "Oxygen";
+  font-size: 16px;
+  line-height: 1.6;
+  color: #111;
+  background: #fff;
+}
+
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1 {
+  font-family: "Quicksand";
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+h2 {
+  
+  font-family: "Quicksand";
+  font-size: 28px;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+p {
+  font-family: "Oxygen";
+  margin-bottom: 16px;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+a:link,
+a:visited {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #314199;
+  text-decoration: underline;
+  transition: all 250ms;	
+}
+
+a:active {
+  color: #314199;
+}
+
+a:focus {
+  outline: 2px dotted #314199;
+}
+
+
+/* =========================
+   LAYOUT / CONTAINERS
+========================= */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.container-narrow {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+section {
+  padding: 30px 0;
+  scroll-margin-top: 60px;
+  
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.faq-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.faq-table thead th {
+	background-color: #092040;
+	border: solid 1px #ccc;
+	padding: 16px;
+	text-align: left;
+	font-weight: bold;
+	color: #fff
+}
+
+.faq-table tbody td {
+	border: solid 1px #ccc;
+	background-color: #fff;
+	padding: 16px;
+	vertical-align: top;
+	text-align: left;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  background-color: #fffffff;
+  color: #ffffff;
+  padding: 10px 10px;
+}
+
+.header-logo {
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+.header-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+  background-color: #ffffff;
+  padding: 15px 0;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.nav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: 60px;
+	justify-content: center;
+}
+
+.nav a {
+	padding: 7px 20px;
+	background-color: #eba628;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: bold;
+	border-radius: 5px;
+	transition: background-color 250ms ease;
+	margin-bottom: 30px;
+	white-space: nowrap;
+}
+
+.nav a:hover{
+	background-color: #314199; 
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+/* =========================
+   IMAGES
+========================= */
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section-dark-blue {
+  background-color: #314199;
+  color:#ffffff;
+}
+
+.section-yellow {
+  background-color: #eda828;
+  color: #000000;
+}
+
+.gradient {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 1) 23%, rgba(49, 65, 153, 1) 75%);
+}
+
+.gradient1 {
+	background: linear-gradient(360deg, rgba(255, 255, 255, 1) 23%, rgba(49, 65, 153, 1) 75%);
+}
+/* =========================
+   COMPONENTS
+========================= */
+
+.card {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 10px;
+}
+
+.card img {
+  
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+/* =========================
+   BUTTONS
+========================= */
+
+.main-btn:link,
+.main-btn:visited,
+.main-btn:active,
+.main-btn:focus {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #314199;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 250ms ease;
+  margin-bottom: 30px;
+}
+
+.main-btn:hover {
+  background-color: #e09900;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.white-btn:link,
+.white-btn:visited,
+.white-btn:active,
+.white-btn:focus {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #314199;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 250ms ease;
+  margin-bottom: 30px;
+}
+
+.white-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}
+.card-btn:link,
+.card-btn:visited,
+.card-btn:active,
+.card-btn:focus {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #bd1e2d;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 250ms ease;
+  width: 100;
+  text-align:center;
+  
+}
+
+.card-btn:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.small-btn:link, 
+.small-btn:visited, 
+.small-btn:active, 
+.small-btn:focus {
+  display: inline-block;
+  text-align: center;
+  padding: 15px 5px;
+  background-color: #bd1e2d;
+  width: 80px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 250ms ease;
+}
+.small-btn:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.two-column-grid {
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	grid-gap: 30px;
+}
+
+.three-column-grid {
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-gap: 30px;
+}
+
+.hero-bg h1{
+	font-size: 70px;
+}
+.hero-bg {
+	position: relative;
+	background-image: url("../img/Golden_Pounce3.gif");
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	text-align: center;
+	padding: 70px 0px;
+}
+
+.hero-bg::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(2,6,18,0.65)
+}
+
+.hero-bg > * {
+	position: relative;
+	z-index: 1;
+}
+
+.hero-bg p a:link,
+.hero-bg p a:visited {
+  color: #ffffff;
+}
+
+.hero-bg p a:hover {
+  color: #bd1e2d;
+  text-decoration: underline;
+  transition: all 250ms;	
+}
+
+.hero-bg p a:active {
+  color: #bd1e2d;
+}
+
+.hero-bg p a:focus {
+  outline: 2px dotted #1c75bb;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
